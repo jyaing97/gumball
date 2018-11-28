@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="number.css">
+    <meta charset="utf-8">
+
+    <title>Number guessing game</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="image">
+    <img id="club-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeAAlnrtowrWimhK5CKEKHj9Jb94gblvpgCh35aGsR8X-5WUrtrQ">
+   </div>
+
+    <h1>How Many Gumballs are in the Jar?</h1>
+
+    <p>We have selected a random number between 1 and 100. See if you can guess how many gumballs there are.</p>
+
+    <div class="form">
+      <label for="guessField">How Many?: </label> <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Submit" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/number.js"></script>
+  </body>
+</html>
+
